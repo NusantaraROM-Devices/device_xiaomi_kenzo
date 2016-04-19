@@ -26,14 +26,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_wcd9326.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd9326.xml
 
 
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprint.msm8952
-
-# BSOD Killer
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/etc/init.d/89bsod:system/etc/init.d/89bsod
 
 # Input
 PRODUCT_COPY_FILES += \
