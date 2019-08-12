@@ -450,6 +450,10 @@
     <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b5b0cfa4... msm8956-common: Set google autofill service as default
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
     
@@ -507,8 +511,20 @@
     <bool name="config_alt_ambient_display">true</bool>
 
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
-
   
+    <!-- The list of components which should be automatically disabled for a specific package. --> 
+    <string-array name="config_disabledComponents" translatable="false"> 
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+	<item>com.google.android.googlequicksearchbox/com.google.android.hotword.service.HotwordService</item>
+    </string-array>
+
+    <!-- The component name, flattened to a string, for the default autofill service
+         to  enabled for an user. This service must be trusted, as it can be activated
+         without explicit consent of the user. If no autofill service with the
+          specified name exists on the device, autofill will be disabled by default.
+    -->
+    <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
+
 </resources>
 
 
