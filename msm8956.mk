@@ -273,9 +273,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.0 \
     android.hardware.radio.config@1.0 \
-    android.hardware.secure_element@1.0
+    android.hardware.secure_element@1.0 \
     libbase_shim \
-    ims-ext-common
+    ims-ext-common \
+    ims-ext-common_system
 
 PRODUCT_BOOT_JARS += \
     ims-ext-common_system
