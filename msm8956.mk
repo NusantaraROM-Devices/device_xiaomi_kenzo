@@ -245,7 +245,10 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common
+    ims-ext-common \
+    android.hardware.radio@1.0 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0
 
 # IPA Manager
 #PRODUCT_PACKAGES += \
