@@ -608,7 +608,7 @@ lib64/vendor.qti.imsrtpservice@1.0.so
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
-vendor/bin/imsrcsd|39b71e1f7e76b58ebd4dd44fef8ee1f6bc15464c 
+vendor/bin/imsrcsd|39b71e1f7e76b58ebd4dd44fef8ee1f6bc15464c
 vendor/framework/qti-vzw-ims-internal.jar
 vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so
 vendor/lib/lib-imsSDP.so
@@ -634,7 +634,7 @@ vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpsl.so
-vendor/lib64/lib-uceservice.so|0f8b0a2a97937ac7649c699c7e96297688903f8c 
+vendor/lib64/lib-uceservice.so|0f8b0a2a97937ac7649c699c7e96297688903f8c
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib64/libbase-hax.so|0bdae22ed6c050b13358c91dd332c9ef0c836ae7
@@ -665,10 +665,10 @@ vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
 -vendor/lib64/libtime_genoff.so
 
-# Widevine DRM - from Mi A2 jasmine_sprout 9 PKQ1.180904.001 V10.0.1.0.PDIMIFJ release-keys
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine|320749f5ce293176b9de747d13db7f026748b955
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
-vendor/lib64/libwvhidl.so|0c50c3cd9985fbda6a17d961f8618e6e62e545ab
+# Widevine DRM - from daisy - PKQ1.180917.001.V10.0.1.0.PDLMIFJ
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|5c2f83943a1c8680cde657e22425f665ab438714
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|f69c3e3c5d26e68e242b4b3909fb57dd680b3a62
+vendor/lib64/libwvhidl.so|ff967a2aab27d75eb858c6a7a269d4090af9f377
 
 # Wi-Fi
 bin/wcnss_service
