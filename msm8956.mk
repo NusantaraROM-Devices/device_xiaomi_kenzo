@@ -87,6 +87,10 @@ PRODUCT_PACKAGES += \
 # APEX
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/swcodec/ld.config.txt
+    
+# Doze mode
+PRODUCT_PACKAGES += \
+    ZukDoze
 
 # Audio
 PRODUCT_PACKAGES += \
