@@ -58,6 +58,9 @@ persist.vendor.dpm.feature=5
 # Dex2oat use 6 cores during bootup dex compilation
 dalvik.vm.boot-dex2oat-threads=6
 
+# Codec2 switch
+debug.media.codec2=2
+
 # Dex2oat use 4 cores durning normal dex compilation (app installations)
 dalvik.vm.dex2oat-threads=6
 
