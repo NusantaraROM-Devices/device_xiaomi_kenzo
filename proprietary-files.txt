@@ -674,3 +674,7 @@ vendor/lib64/libwvhidl.so|ff967a2aab27d75eb858c6a7a269d4090af9f377
 bin/wcnss_service
 lib/libsoeminfo.so
 lib64/libsoeminfo.so
+
+# msm_irqbalance - from sailfish - PPR2.181005.003
+vendor/bin/msm_irqbalance|3f7a923d9d01dbfda40ebdfdd27a62167df69c13
+
