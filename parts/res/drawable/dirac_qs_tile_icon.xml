@@ -21,5 +21,5 @@
         android:strokeColor="#FF000000"
         android:strokeWidth="2"
         android:strokeMiterLimit="10"
-        android:pathData="M11.5,4h-6v4l4,4l-4,4v4h6H11c4.4,0,8-3.6,8-8s-3.6-8-8-8" />
+        android:pathData="M10,20H14V4H10V20M4,20H8V12H4V20M16,9V20H20V9H16Z" />
 </vector>
