@@ -1,6 +1,2 @@
 allow system_server proc_touchpanel:dir search;
 allow system_server proc_touchpanel:file rw_file_perms;
-
-# DT2W
-allow system_server sysfs_dt2w:dir search;
-allow system_server sysfs_dt2w:file rw_file_perms;
