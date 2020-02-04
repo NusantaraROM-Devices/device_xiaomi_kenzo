@@ -1,10 +1,15 @@
 type proc_touchpanel, proc_type, sysfs_type, fs_type;
+
 type decrypt_file, file_type, data_file_type;
+
 type fingerprintd_custom_service, service_manager_type;
+
 type tmp_root_mount_file, file_type;
+
 type fpc_data_file, core_data_file_type, data_file_type, file_type;
+
 type sysfs_fpc, sysfs_type, fs_type;
-type sysfs_disk_stat, fs_type, sysfs_type;
+
 type fpc_socket, file_type;
 
 # DT2W
