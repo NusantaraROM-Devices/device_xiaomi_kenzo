@@ -90,7 +90,7 @@ PRODUCT_COPY_FILES += \
 
 # Doze mode
 PRODUCT_PACKAGES += \
-    ZukDoze
+    CustomDoze
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -103,7 +103,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-service \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.soundtrigger@2.2-service \
-    audio.a2dp.default \
     audio.primary.msm8952 \
     audio.r_submix.default \
     audio.usb.default \
@@ -114,6 +113,12 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libtinycompress \
     tinymix
+
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    android.hardware.bluetooth.a2dp@1.0-impl \
+    android.hardware.bluetooth.a2dp@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/aanc_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/aanc_tuning_mixer.txt \
@@ -444,8 +449,8 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl
-
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
 
 # Widevine
 PRODUCT_PACKAGES += \
