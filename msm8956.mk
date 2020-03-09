@@ -80,10 +80,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
-# Device-specific Settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # APEX
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/swcodec/ld.config.txt
@@ -512,7 +508,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AdvancedControls
 
-#Zuk Extras
+Zuk Extras
 PRODUCT_PACKAGES += \
     ZukPref
 
