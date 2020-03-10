@@ -16,8 +16,8 @@
 -->
 <resources>
     <!-- App name and summary -->
-    <string name="advanced_settings">AdvancedControls</string>
-    <string name="advanced_settings_summary">Kenzo specific features</string>
+    <string name="advanced_settings">AdvancedControls 2</string>
+    <string name="advanced_settings_summary">Device specific features</string>
 
 	<!-- Fingerprint options -->
     <string name="fp_title">Fingerprint options</string>
