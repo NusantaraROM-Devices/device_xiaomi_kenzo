@@ -239,12 +239,6 @@ on boot
     chmod 0666 /sys/class/leds/led:torch_0/brightness
     chmod 0666 /sys/class/leds/led:torch_1/brightness
     chmod 0666 /sys/class/leds/led:switch/brightness
-    
-    # Flashlight
-    chown root system /sys/devices/soc.0/qpnp-flash-led-23/leds/led:torch_0/max_brightness
-    chmod 0660 /sys/devices/soc.0/qpnp-flash-led-23/leds/led:torch_0/max_brightness
-    chown root system /sys/devices/soc.0/qpnp-flash-led-23/leds/led:torch_1/max_brightness
-    chmod 0660 /sys/devices/soc.0/qpnp-flash-led-23/leds/led:torch_1/max_brightness
 
     # Create directory used for display
     mkdir /persist/display 0770 system graphics
@@ -713,6 +707,3 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     group system
     disabled
     oneshot
-
-on property:apexd.status=ready
-    mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
