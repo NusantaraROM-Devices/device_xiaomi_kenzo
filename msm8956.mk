@@ -506,11 +506,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AdvancedControls
 
-Zuk Extras
-PRODUCT_PACKAGES += \
-    ZukPref
-
-
 # Cast hacks
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
