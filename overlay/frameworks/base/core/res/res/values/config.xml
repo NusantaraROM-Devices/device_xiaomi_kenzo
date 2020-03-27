@@ -477,6 +477,12 @@
     <!-- Whether to artificially interpret all signal strengths as
          one bar higher than they actually are -->
     <bool name="config_inflateSignalStrength">true</bool>
+
+    <!-- Smart Charging -->
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string>
+  
 </resources>
 
 
