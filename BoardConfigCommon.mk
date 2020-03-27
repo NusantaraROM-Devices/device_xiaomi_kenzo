@@ -232,6 +232,7 @@ TARGET_LD_SHIM_LIBS := \
 BOARD_SEPOLICY_VERS := 29.0
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true
