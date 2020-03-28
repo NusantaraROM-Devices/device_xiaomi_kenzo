@@ -121,10 +121,6 @@ on boot
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/device/extldo
     chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
 
-    # Vibrator permissions
-    chown root system /sys/class/timed_output/vibrator/vtg_level
-    chmod 0660 /sys/class/timed_output/vibrator/vtg_level
-
     # Kcal permissions
     chown root system /sys/devices/platform/kcal_ctrl.0/kcal
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal
@@ -139,7 +135,7 @@ on boot
     chown root system /sys/devices/platform/kcal_ctrl.0/kcal_cont
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
 
-# AdvancedControls
+    # AdvancedControls
     chown root system /sys/devices/soc.0/fpc_fpc1020.110/wakeup_enable
     chmod 0660 /sys/devices/soc.0/fpc_fpc1020.110/wakeup_enable
     chown root system /sys/kernel/sound_control/headphone_gain
