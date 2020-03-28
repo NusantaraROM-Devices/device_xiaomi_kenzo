@@ -1,4 +1,6 @@
 allow init debugfs:file write;
+allow init video_device:chr_file { ioctl } ;
+allow init init:socket { read } ;
 
 # DT2W
 allow init sysfs_dt2w:file { rw_file_perms setattr };
