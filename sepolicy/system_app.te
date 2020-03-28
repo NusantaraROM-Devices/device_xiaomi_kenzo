@@ -2,3 +2,6 @@ allow system_app cnd:binder { call } ;
 allow system_app sysfs_dt2w:file { write } ;
 allow system_app sysfs:file { write } ;
 allow system_app sysfs_vibrator:dir { search } ;
+
+allow system_app sysfs_zram:dir r_dir_perms;
+allow system_app sysfs_zram:file r_file_perms;
