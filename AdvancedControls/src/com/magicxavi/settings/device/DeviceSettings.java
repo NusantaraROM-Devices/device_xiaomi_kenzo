@@ -19,7 +19,7 @@ public class DeviceSettings extends PreferenceFragment implements
     // Fingerprint options
     private static final String CATEGORY_FINGERPRINT_OPTIONS = "fp_options";
     public static final String PREF_FPWAKEUP = "fpwakeup";
-    public static final String FPWAKEUP_PATH = "/sys/devices/soc.0/fpc_fpc1020.110/wakeup_enable";
+    public static final String FPWAKEUP_PATH = "/sys/devices/soc.0/fpc_fpc1020.110/enable_wakeup";
 
     // Dirac
     private static final String PREF_ENABLE_DIRAC = "dirac_enabled";
@@ -64,13 +64,9 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String SPECTRUM_SYSTEM_PROPERTY = "persist.spectrum.profile";
 
     // QC limit
-    private static final String CATEGORY_QC= "qc";
-    public static final String PREF_QC_LIMIT = "qc_limit";
-    public static final String QC_LIMIT_PATH = "/sys/devices/soc.0/qpnp-smbcharger-16/power_supply/battery/constant_charge_current_max";
-
-    // qc_limit min and max value
-    public static final int MIN_QC = 1000000;
-    public static final int MAX_QC = 2500000;
+    //private static final String CATEGORY_QC= "qc";
+    //public static final String PREF_QC_LIMIT = "qc_limit";
+    //public static final String QC_LIMIT_PATH = "/sys/devices/soc.0/qpnp-smbcharger-16/power_supply/battery/constant_charge_current_max";
 
     private SecureSettingListPreference mSPECTRUM;
     private SecureSettingCustomSeekBarPreference mHeadphoneGain;
@@ -96,13 +92,13 @@ public class DeviceSettings extends PreferenceFragment implements
         mMicrophoneGain = (SecureSettingCustomSeekBarPreference) findPreference(PREF_MICROPHONE_GAIN);
         mMicrophoneGain.setOnPreferenceChangeListener(this);
 
-        if (FileUtils.fileWritable(QC_LIMIT_PATH)) {
-        SecureSettingCustomSeekBarPreference QuickCharge = (SecureSettingCustomSeekBarPreference) findPreference(PREF_QC_LIMIT);
-        QuickCharge.setEnabled(FileUtils.fileWritable(QC_LIMIT_PATH));
-        QuickCharge.setOnPreferenceChangeListener(this);
-        } else {
-            getPreferenceScreen().removePreference(findPreference(CATEGORY_QC));
-        }
+        //if (FileUtils.fileWritable(QC_LIMIT_PATH)) {
+        //SecureSettingCustomSeekBarPreference QuickCharge = (SecureSettingCustomSeekBarPreference) findPreference(PREF_QC_LIMIT);
+        //QuickCharge.setEnabled(FileUtils.fileWritable(QC_LIMIT_PATH));
+        //QuickCharge.setOnPreferenceChangeListener(this);
+        //} else {
+        //    getPreferenceScreen().removePreference(findPreference(CATEGORY_QC));
+        //}
 
         VibrationSeekBarPreference vibrationStrength = (VibrationSeekBarPreference) findPreference(PREF_VIBRATION_STRENGTH);
         vibrationStrength.setEnabled(FileUtils.fileWritable(VIBRATION_STRENGTH_PATH));
@@ -241,10 +237,10 @@ public class DeviceSettings extends PreferenceFragment implements
                 FileUtils.setValue(MICROPHONE_GAIN_PATH, (int) value);
                 break;
 
-            case PREF_QC_LIMIT:
-                double quickchargeValue = (int) value / 2000.0 * (MAX_QC - MIN_QC) + MIN_QC;
-                FileUtils.setValue(QC_LIMIT_PATH, quickchargeValue);
-                break;
+            //case PREF_QC_LIMIT:
+            //    double quickchargeValue = (int) value * 1000.0;
+            //    FileUtils.setValue(QC_LIMIT_PATH, quickchargeValue);
+            //    break;
 
             default:
                 break;
