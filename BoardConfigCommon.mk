@@ -142,8 +142,8 @@ MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
 # Encryption
-# TARGET_HW_DISK_ENCRYPTION := true
-# TARGET_CRYPTFS_HW_PATH ?= vendor/qcom/opensource/cryptfs_hw
+TARGET_HW_DISK_ENCRYPTION := true
+TARGET_CRYPTFS_HW_PATH ?= vendor/qcom/opensource/cryptfs_hw
 
 # Extended filesystem support
 TARGET_EXFAT_DRIVER := sdfat
