@@ -54,6 +54,8 @@ void check_device()
         heapgrowthlimit = "256m";
         heapsize = "512m";
         heapminfree = "2m";
+        // Reduce memory footprint
+        property_set("ro.config.avoid_gfx_accel", "true");
     }
 }
 
