@@ -513,6 +513,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AdvancedControls
 
+# Additional Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Cast hacks
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
