@@ -450,10 +450,6 @@
     <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b5b0cfa4... msm8956-common: Set google autofill service as default
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
     
