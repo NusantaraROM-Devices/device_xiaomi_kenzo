@@ -154,7 +154,6 @@ PRODUCT_PACKAGES += \
     camera.msm8952 \
     libqomx_core \
     CameraGo \
-    GalleryGo \
     Yuzu \
     RemovePackages \
     vendor.qti.hardware.camera.device@1.0 \
