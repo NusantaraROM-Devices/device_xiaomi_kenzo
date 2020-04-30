@@ -153,9 +153,6 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     camera.msm8952 \
     libqomx_core \
-    CameraGo \
-    Yuzu \
-    RemovePackages \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
 
@@ -500,6 +497,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
+#Additional Packages
+PRODUCT_PACKAGES += \
+    CameraGo \
+    Yuzu \
+    RemovePackages
 
 # AdvancedControls
 PRODUCT_PACKAGES += \
