@@ -501,6 +501,7 @@ PRODUCT_COPY_FILES += \
 #Additional Packages
 PRODUCT_PACKAGES += \
     CameraGo \
+    GalleryGo \
     Yuzu \
     RemovePackages
 
