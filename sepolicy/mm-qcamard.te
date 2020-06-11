@@ -1,1 +1,0 @@
-allow mm-qcamerad sysfs:file rw_file_perms;

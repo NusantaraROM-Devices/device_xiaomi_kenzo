@@ -1,1 +1,5 @@
-genfscon proc /touchpanel    u:object_r:proc_touchpanel:s0
+# Procfs
+genfscon proc /bus/pci/devices                                              u:object_r:proc_pci_devices:s0
+genfscon proc /sys/kernel/boot_reason                                       u:object_r:proc_kernel_boot_reason:s0
+genfscon proc /sys/kernel/printk                                            u:object_r:proc_kernel_printk:s0
+genfscon proc /touchpanel                                                   u:object_r:proc_touchpanel:s0

@@ -1,0 +1,3 @@
+allow zygote theme_prop:file { read } ;
+allow zygote theme_prop:file { open } ;
+allow zygote theme_prop:file { getattr } ;

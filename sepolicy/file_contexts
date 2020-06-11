@@ -1,5 +1,17 @@
+# Decrypt
+/data/decrypt\.txt                    u:object_r:thermal_data_file:s0
+
+# Cache
+/dev/block/platform/soc.0/7824900.sdhci/by-name/cache                 u:object_r:cache_block_device:s0
+
+# DPM
+/system/bin/dpmd                                u:object_r:dpmd_exec:s0
+
 # DSP
 /dev/block/platform/soc.0/7824900.sdhci/by-name/dsp                   u:object_r:dsp_block_device:s0
+
+# FRP
+/dev/block/platform/soc/7824900.sdhci/by-name/config                  u:object_r:frp_block_device:s0
 
 # IR Blaster
 /dev/lirc[0-9]*                                                       u:object_r:lirc_device:s0
@@ -11,5 +23,17 @@
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service-custom u:object_r:hal_fingerprint_default_exec:s0
 
-/firmware(/.*)?            u:object_r:firmware_file:s0
+# Legacy paths
+/system/bin/mm-qcamera-daemon                                         u:object_r:mm-qcamerad_exec:s0
+/system/bin/wcnss_service                                             u:object_r:wcnss_service_exec:s0
+/system/bin/energy-awareness                                          u:object_r:energyawareness_exec:s0
+/vendor/bin/wcnss_filter                                              u:object_r:wcnss_filter_exec:s0
+/vendor/bin/qseecomd                                                  u:object_r:tee_exec:s0
+
+#Firmware
+/bt_firmware(/.*)?    u:object_r:bt_firmware_file:s0
+/firmware(/.*)?       u:object_r:firmware_file:s0
 /cust(/.*)?                 u:object_r:tmp_root_mount_file:s0
+
+# Binaries
+/system/bin/chargeonlymode            u:object_r:charger_exec:s0

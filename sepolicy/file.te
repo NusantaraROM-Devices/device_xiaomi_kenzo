@@ -1,16 +1,14 @@
-type proc_touchpanel, proc_type, sysfs_type, fs_type;
-
-type decrypt_file, file_type, data_file_type;
-
-type fingerprintd_custom_service, service_manager_type;
-
-type tmp_root_mount_file, file_type;
-
-type fpc_data_file, core_data_file_type, data_file_type, file_type;
-
-type sysfs_fpc, sysfs_type, fs_type;
-
+type proc_touchpanel, proc_type, sysfs_type, fs_type; 
+type fingerprintd_custom_service, service_manager_type; 
+type tmp_root_mount_file, file_type; 
+type fpc_data_file, core_data_file_type, data_file_type, file_type; 
+type sysfs_fpc, sysfs_type, fs_type; 
 type fpc_socket, file_type;
+type proc_kernel_boot_reason, fs_type, proc_type;
+type proc_pci_devices, fs_type, proc_type;
+type proc_kernel_printk, fs_type, proc_type;
+type proc_kernel_sched_boost, fs_type, proc_type;
+type thermal_data_file, core_data_file_type, data_file_type, file_type;
 
 # DT2W
 type sysfs_dt2w, sysfs_type, fs_type;

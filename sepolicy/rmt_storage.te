@@ -1,1 +1,6 @@
 allow rmt_storage self:capability net_raw;
+allow rmt_storage block_device:blk_file { read } ;
+allow rmt_storage block_device:blk_file { read write } ;
+allow rmt_storage block_device:blk_file { open } ;
+allow rmt_storage debugfs:file { write } ;
+allow rmt_storage debugfs:file { open } ;

@@ -1,1 +1,7 @@
 allow cnd system_wpa_socket:sock_file unlink;
+allow cnd default_android_hwservice:hwservice_manager { add } ;
+allow cnd sysfs:file { read } ;
+allow cnd wifi_prop:file { read } ;
+allow cnd sysfs:file { open } ;
+allow cnd wifi_prop:file { open } ;
+allow cnd wifi_prop:file { getattr } ;

@@ -1,0 +1,5 @@
+allow dpmd device:file { open write };
+allow dpmd sysfs:file r_file_perms;
+allow dpmd self:capability { dac_read_search dac_override };
+allow dpmd netutils_wrapper_exec:file execute;
+allow dpmd netutils_wrapper_exec:file { open getattr read execute execute_no_trans };

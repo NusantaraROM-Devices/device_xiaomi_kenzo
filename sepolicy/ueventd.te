@@ -1,0 +1,3 @@
+allow ueventd unlabeled:file { read } ;
+allow ueventd unlabeled:file { open } ;
+allow ueventd unlabeled:file { getattr } ;

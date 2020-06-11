@@ -1,1 +1,5 @@
 allow netmgrd system_file:file { execute_no_trans } ;
+allow netmgrd sysfs:file { read } ;
+allow netmgrd property_socket:sock_file { write } ;
+allow netmgrd sysfs:file { open } ;
+allow netmgrd init:unix_stream_socket { connectto } ;

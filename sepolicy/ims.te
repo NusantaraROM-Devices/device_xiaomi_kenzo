@@ -1,0 +1,2 @@
+allow ims sysfs:file { read } ;
+allow ims sysfs:file { open } ;

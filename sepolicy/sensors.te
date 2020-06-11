@@ -1,0 +1,5 @@
+allow time_daemon time_data_file:dir { search } ;
+allow sensors persist_file:dir { getattr } ;
+allow sensors sysfs:file { read } ;
+allow sensors persist_file:dir { search } ;
+allow sensors sysfs:file { open } ;
