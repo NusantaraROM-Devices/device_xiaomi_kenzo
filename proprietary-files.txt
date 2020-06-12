@@ -580,14 +580,9 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
 vendor/radio/qcril_database/qcril.db
 
-# Radio - from daisy QKQ1.191002.002-V11.0.4.0.QDLMIXM
-framework/qti-telephony-common.jar|11d6b89b31a9bf65218b3676c2bbd296275b1932
-
-# Radio - IMS from daisy QKQ1.191002.002-V11.0.4.0.QDLMIXM
--priv-app/ims/ims.apk|9c4ca91e0ec7a567d22251d7ca0640abf13fdd7b
--product/app/imssettings/imssettings.apk|6b59b9e517b9e288576616a4799690b8a4c6e76e
-
-# Radio
+# Radio - IMS
+-priv-app/ims/ims.apk|426be1b83d6f608107d6dcf587080551abeab3e2
+-app/imssettings/imssettings.apk|0e579b1c9251173b9ec0381a0bb406d0e0314c39
 etc/permissions/qti-vzw-ims-internal.xml
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/lib-imscamera.so
