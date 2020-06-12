@@ -580,8 +580,8 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
 vendor/radio/qcril_database/qcril.db
 
-# Radio - from Dragon_00WW-user 10 QKQ1.190828.002 00WW_4_040
-framework/qti-telephony-common.jar|74adbf98e89531ac385ab5c4cea3c2549a0d24b0
+# Radio - from daisy QKQ1.191002.002-V11.0.4.0.QDLMIXM
+framework/qti-telephony-common.jar|11d6b89b31a9bf65218b3676c2bbd296275b1932
 
 # Radio - IMS from daisy QKQ1.191002.002-V11.0.4.0.QDLMIXM
 -priv-app/ims/ims.apk|9c4ca91e0ec7a567d22251d7ca0640abf13fdd7b
