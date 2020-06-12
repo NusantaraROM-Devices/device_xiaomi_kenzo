@@ -502,7 +502,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CameraGo \
     GalleryGo \
-    Yuzu \
+    FirefoxLite \
     RemovePackages
 
 # AdvancedControls
