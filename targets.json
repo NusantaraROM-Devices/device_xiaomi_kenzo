@@ -7,7 +7,8 @@
 
     "target_commits": {
             "platform_frameworks_av": "bb35abb34afedacbecd260baf75650472cf9a447",
-            "android__system_bt": "59b42f4b1e4ae75e349a0c1fc47c3453e0011d0e"
+            "android__system_bt": ["b9419f1154d02482f0444800e58ae94a02874822",
+                                    "53294891018208bf3ccef0fa85d8dd52510485ba"]
     }
 
 
