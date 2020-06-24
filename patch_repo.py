@@ -65,7 +65,7 @@ Example: $python device/<manufacturer>/<codename>/patch_repo.py""")
         else:
                 patch_list.append(value)
 
-        target_dir=target[8:].replace("_", "/")
+        target_dir=target[9:].replace("_", "/")
         if not path.exists(target_dir):
             print("Error: Couldn't find target path {}".format(target_dir))
             self.__help__()
