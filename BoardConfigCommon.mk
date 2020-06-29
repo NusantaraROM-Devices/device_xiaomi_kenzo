@@ -262,3 +262,5 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
 TARGET_ENABLE_MEDIADRM_64 := true
 
 BUILD_BROKEN_DUP_RULES := true
+
+TARGET_FLATTEN_APEX := true
