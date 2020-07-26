@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+$(call inherit-product, $(LOCAL_PATH)/go_kenzo.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \

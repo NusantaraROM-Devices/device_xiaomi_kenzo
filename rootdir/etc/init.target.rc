@@ -124,3 +124,6 @@ service vendor.energy-awareness /system/vendor/bin/energy-awareness
     user root
     group system
     oneshot
+
+on property:ro.config.low_ram=true
+    mount none /vendor/etc/permissions/go_handheld_core_hardware.xml /vendor/etc/permissions/handheld_core_hardware.xml bind
