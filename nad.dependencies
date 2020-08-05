@@ -1,0 +1,32 @@
+[
+  {
+    "remote": "github",
+    "repository": "MocaRafee/device_bloatware",
+    "target_path": "device/bloatware",
+    "branch": "nad_10"
+  },
+  {
+    "remote": "github",
+    "repository": "MocaRafee/Escrima_kernel_xiaomi_msm8956",
+    "target_path": "kernel/xiaomi/msm8956",
+    "branch": "ten"
+  },
+  {
+    "remote": "github",
+    "repository": "MocaRafee/unified_vendor_xiaomi_kenzo",
+    "target_path": "vendor/xiaomi/kenzo",
+    "branch": "ten"
+  },
+  {
+    "remote": "priv",
+    "repository": "android_packages_apps_NusantaraParts",
+    "target_path": "packages/apps/NusantaraParts",
+    "branch": "3.10"
+  },
+  {
+    "remote": "priv",
+    "repository": "android_packages_apps_NusantaraPapers",
+    "target_path": "packages/apps/NusantaraPapers",
+    "branch": "10"
+  }
+]
