@@ -13,6 +13,24 @@
   },
   {
     "remote": "github",
+    "repository": "LineageOS/android_hardware_qcom_audio",
+    "target_path": "hardware/qcom-caf/msm8952/audio",
+    "branch": "lineage-17.1-caf-msm8952"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_hardware_qcom_display",
+    "target_path": "hardware/qcom-caf/msm8952/display",
+    "branch": "lineage-17.1-caf-msm8952"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_hardware_qcom_media",
+    "target_path": "hardware/qcom-caf/msm8952/media",
+    "branch": "lineage-17.1-caf-msm8952"
+  },
+  {
+    "remote": "github",
     "repository": "MocaRafee/proprietary_vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch": "ten"
