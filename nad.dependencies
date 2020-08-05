@@ -37,6 +37,18 @@
   },
   {
     "remote": "github",
+    "repository": "MocaRafee/platform_frameworks_av",
+    "target_path": "frameworks/av",
+    "branch": "nad_10"
+  },
+  {
+    "remote": "github",
+    "repository": "MocaRafee/android__system_bt",
+    "target_path": "system/bt",
+    "branch": "nad_10"
+  },
+  {
+    "remote": "github",
     "repository": "MocaRafee/proprietary_vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch": "ten"
