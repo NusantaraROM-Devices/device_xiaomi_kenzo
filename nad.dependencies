@@ -19,38 +19,32 @@
   },
   {
     "remote": "github",
-    "repository": "LineageOS/android_hardware_qcom_audio",
-    "target_path": "hardware/qcom-caf/msm8952/audio",
-    "branch": "lineage-17.1-caf-msm8952"
-  },
-  {
-    "remote": "github",
-    "repository": "LineageOS/android_hardware_qcom_display",
-    "target_path": "hardware/qcom-caf/msm8952/display",
-    "branch": "lineage-17.1-caf-msm8952"
-  },
-  {
-    "remote": "github",
-    "repository": "LineageOS/android_hardware_qcom_media",
-    "target_path": "hardware/qcom-caf/msm8952/media",
-    "branch": "lineage-17.1-caf-msm8952"
-  },
-  {
-    "remote": "github",
-    "repository": "MocaRafee/platform_frameworks_av",
+    "repository": "Nusantara-ROM/android_frameworks_av",
     "target_path": "frameworks/av",
-    "branch": "nad_10"
+    "branch": "10-msm8956"
   },
   {
     "remote": "github",
-    "repository": "MocaRafee/android__system_bt",
+    "repository": "Nusantara-ROM/android_system_bt",
     "target_path": "system/bt",
-    "branch": "nad_10"
+    "branch": "10-msm8956"
   },
   {
     "remote": "github",
     "repository": "MocaRafee/proprietary_vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch": "ten"
+  },
+  {
+    "remote": "priv",
+    "repository": "android_packages_apps_NusantaraParts",
+    "target_path": "packages/apps/NusantaraParts",
+    "branch": "3.10"
+  },
+  {
+    "remote": "priv",
+    "repository": "android_packages_apps_NusantaraPapers",
+    "target_path": "packages/apps/NusantaraPapers",
+    "branch": "10"
   }
 ]
