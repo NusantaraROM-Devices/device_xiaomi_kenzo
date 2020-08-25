@@ -216,6 +216,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service-custom
 
+# Charger
+include $(LOCAL_PATH)/rootdir/charger/charger.mk
+
 # DataServices
 PRODUCT_PACKAGES += \
     librmnetctl
