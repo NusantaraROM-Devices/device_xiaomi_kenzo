@@ -428,7 +428,10 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     init.safailnet.rc \
     init.spectrum.rc \
-    init.spectrum.sh
+    init.spectrum.sh \
+    init.xiaomi_parts.rc \
+    init.parallax.rc \
+    init.parallax.sh
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -571,3 +574,7 @@ PRODUCT_ODM_PROPERTIES += \
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=0
+
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
