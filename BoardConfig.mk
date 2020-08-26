@@ -117,6 +117,10 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 BOARD_CHARGER_ENABLE_SUSPEND := true
 WITH_CUSTOM_CHARGER := false
 
+# Offline Charger
+USE_PIXEL_CHARGING := true
+
+
 # Dex
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
