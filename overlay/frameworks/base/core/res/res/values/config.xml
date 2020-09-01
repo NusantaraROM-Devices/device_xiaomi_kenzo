@@ -483,7 +483,10 @@
          one bar higher than they actually are -->
     <bool name="config_inflateSignalStrength">true</bool>
 
-    <!-- Smart Charging -->
+    <!-- Smart charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
+    <integer name="config_smartChargingBatteryLevel">80</integer>
+    <integer name="config_smartChargingBatteryResumeLevel">60</integer>
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
     <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
     <string name="config_SmartChargingResumeValue" translatable="false">1</string>
@@ -521,6 +524,7 @@
           specified name exists on the device, autofill will be disabled by default.
     -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
+
 
 </resources>
 
