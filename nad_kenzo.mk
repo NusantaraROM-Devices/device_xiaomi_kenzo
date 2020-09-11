@@ -22,7 +22,6 @@ $(call inherit-product, device/xiaomi/kenzo/device.mk)
 
 # Inherit some common NusantaraROM stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-$(call inherit-product-if-exists, packages/apps/NusantaraParts/nadproject.mk)
 NAD_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 

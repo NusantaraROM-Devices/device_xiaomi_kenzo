@@ -12,16 +12,16 @@
     "branch": "ten_dev"
   },
   {
+    "remote": "ghpriv",
+    "repository": "MocaRafee/aandroid_device_xiaomi_sdm660-common",
+    "target_path": "packages/apps/meinparts",
+    "branch": "meinekenzur"
+  },
+  {
     "remote": "github",
     "repository": "MocaRafee/unified_vendor_xiaomi_kenzo",
     "target_path": "vendor/xiaomi/kenzo",
     "branch": "ten"
-  },
-  {
-    "remote": "priv",
-    "repository": "android_packages_apps_NusantaraParts",
-    "target_path": "packages/apps/NusantaraParts",
-    "branch": "3.10"
   },
   {
     "remote": "priv",
