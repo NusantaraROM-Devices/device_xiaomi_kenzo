@@ -1,14 +1,14 @@
 {
     "target_github": "https://github.com/Mocarafee/",
 
-    "target_branch": "ten",
+    "target_branch": "nad_10",
 
     "target_trees": "",
 
     "target_commits": {
-            "platform_frameworks_av": "bb35abb34afedacbecd260baf75650472cf9a447",
-            "android__system_bt": ["b9419f1154d02482f0444800e58ae94a02874822",
-                                    "53294891018208bf3ccef0fa85d8dd52510485ba"]
+            "platform_frameworks_av": "22afa8dcc8466a3cdb7ab05a6eb67dd36fcb250e",
+            "android__system_bt": ["f08807fe3e99f0097e61f39e0e524df9cdddc70e",
+                                    "825f3a116cd61f72d4ae18ad58ef3b9b919b285c"]
     }
 
 
