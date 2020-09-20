@@ -92,10 +92,6 @@ on early-boot
     chmod 0664 /sys/class/graphics/fb0/mdp/bw_mode_bitmap
 
 on boot
-
-    # Goodix
-    chown system system  /dev/goodix_fp
-    chmod 0644 /dev/goodix_fp
     
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
@@ -257,8 +253,6 @@ on post-fs
 
 # msm specific files that need to be created on /data
 on post-fs-data
-    # Goodix
-    mkdir /data/goodix 0700 system system
     
     mkdir /data/vendor/misc 01771 system system
 
@@ -475,10 +469,6 @@ on post-fs-data
 
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
-
-    # Fingerprint
-    mkdir /data/fpc 0770 system system
-    mkdir /data/fpc/s 0770 system system
 
     #Create FTM_AP dir for factory test
     mkdir /data/FTM_AP 0775 system system
@@ -702,24 +692,4 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     group system
     disabled
     oneshot
-    
-on property:ro.boot.fpsensor=fpc
-    setprop persist.sys.fp.goodix 0
-    setprop ro.hardware.fingerprint fpc
 
-on property:ro.boot.fpsensor=gdx
-    setprop persist.sys.fp.goodix 1
-    setprop ro.hardware.fingerprint gdx
-
-service gx_fpd /system/bin/gx_fpd
-    class late_start
-    user system
-    group system
-    disabled
-    writepid /dev/cpuset/system-background/tasks
-
-on property:persist.sys.fp.goodix=0
-    stop gx_fpd
-
-on property:persist.sys.fp.goodix=1
-    start gx_fpd
