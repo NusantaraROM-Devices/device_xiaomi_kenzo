@@ -19,6 +19,12 @@
   },
   {
     "remote": "github",
+    "repository": "MocaRafee/gcc-linaro-6.5.0-2018.12-linux_linaro",
+    "target_path": "peko",
+    "branch": "master"
+  },
+  {
+    "remote": "github",
     "repository": "MocaRafee/unified_vendor_xiaomi_kenzo",
     "target_path": "vendor/xiaomi/kenzo",
     "branch": "ten"
