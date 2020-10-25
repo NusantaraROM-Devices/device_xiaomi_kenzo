@@ -25,6 +25,8 @@ $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 NAD_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Bypass Q path restriction to compile with gcc 2018
+TEMPORARY_DISABLE_PATH_RESTRICTIONS := true
 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
