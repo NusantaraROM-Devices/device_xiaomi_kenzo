@@ -308,12 +308,13 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0 \
-    android.hardware.radio.config@1.0 \
-    android.hardware.secure_element@1.0 \
     libbase_shim \
     ims-ext-common \
-    ims-ext-common_system
+    ims_ext_common.xml \
+    ims-ext-common_system \
+    android.hardware.radio@1.0 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0
 
 PRODUCT_BOOT_JARS += \
     ims-ext-common_system
@@ -584,7 +585,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
-    
+
 # QMI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
