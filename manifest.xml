@@ -504,4 +504,13 @@
          </interface>
          <fqname>@1.0::IPerf/default</fqname>
      </hal>
+    <hal format="hidl">
+        <name>vendor.nxp.nxpese</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>INxpEse</name>
+            <instance>default</instance>
+        </interface>
+    </hal> 
 </manifest>
