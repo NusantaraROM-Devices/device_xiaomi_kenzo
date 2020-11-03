@@ -27,6 +27,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_extcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_extcodec.xml \
     $(LOCAL_PATH)/audio/mixer_paths_wcd9326.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd9326.xml
 
+# HotwordEnrollment
+PRODUCT_PACKAGES += \
+    HotwordEnrollmentOKGoogleWCD9335 \
+    HotwordEnrollmentTGoogleWCD9335 \
+    HotwordEnrollmentXGoogleWCD9335
 
 # Fingerprint
 PRODUCT_PACKAGES += \
