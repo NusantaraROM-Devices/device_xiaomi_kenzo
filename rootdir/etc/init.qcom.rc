@@ -554,12 +554,6 @@ service start_hci_filter /system/vendor/bin/wcnss_filter
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service config_bt_addr /system/vendor/bin/btnvtool -O
-    class core
-    user bluetooth
-    group bluetooth radio
-    oneshot
-
 # FM
 on property:hw.fm.init=0
     write /sys/module/radio_iris_transport/parameters/fmsmd_set 0
