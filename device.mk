@@ -309,13 +309,12 @@ PRODUCT_PACKAGES += \
     libbase_shim \
     ims-ext-common \
     ims_ext_common.xml \
-    ims-ext-common_system \
     android.hardware.radio@1.0 \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0
 
 PRODUCT_BOOT_JARS += \
-    ims-ext-common_system
+    ims-ext-common
 
 # IPA Manager
 #PRODUCT_PACKAGES += \

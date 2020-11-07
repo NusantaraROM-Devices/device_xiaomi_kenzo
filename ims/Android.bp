@@ -4,11 +4,3 @@ cc_library {
     shared_libs: ["libbase"],
     vendor: true
 }
-
-java_library {
-    name: "ims-ext-common_system",
-    installable: true,
-    static_libs: [
-        "ims-ext-common",
-    ],
-}
