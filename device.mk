@@ -584,3 +584,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
+
+# IWlan  
+PRODUCT_PROPERTY_OVERRIDES += \
+     persist.vendor.data.iwlan.enable=true \
+     ro.telephony.iwlan_operation_mode=legacy
