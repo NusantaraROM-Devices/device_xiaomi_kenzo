@@ -3,7 +3,7 @@
     "remote": "github",
     "repository": "MocaRafee/device_bloatware",
     "target_path": "device/bloatware",
-    "branch": "nad_10"
+    "branch": "nad_10_k"
   },
   {
     "remote": "ghpriv",
