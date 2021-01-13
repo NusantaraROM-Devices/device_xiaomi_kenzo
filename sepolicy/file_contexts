@@ -4,8 +4,8 @@
 # Cache
 /dev/block/platform/soc.0/7824900.sdhci/by-name/cache                 u:object_r:cache_block_device:s0
 
-# DPM
-/system/bin/dpmd                                u:object_r:dpmd_exec:s0
+# DPMD
+/(vendor|system/vendor)/bin/dpmd                                u:object_r:dpmd_exec:s0
 
 # DSP
 /dev/block/platform/soc.0/7824900.sdhci/by-name/dsp                   u:object_r:dsp_block_device:s0
@@ -21,7 +21,7 @@
 /sys/android_touch/doubletap2wake                                     u:object_r:sysfs_dt2w:s0
 
 # Fingerprint
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service-custom u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service-custom u:object_r:hal_fingerprint_default_exec:s0
 
 #FPC
 /dev/socket/fpce                                                      u:object_r:fpc_socket:s0
@@ -45,6 +45,5 @@
 
 #Firmware
 /bt_firmware(/.*)?    u:object_r:bt_firmware_file:s0
-/firmware(/.*)?       u:object_r:firmware_file:s0
-/cust(/.*)?                 u:object_r:tmp_root_mount_file:s0
+/cust(/.*)?           u:object_r:tmp_root_mount_file:s0
 

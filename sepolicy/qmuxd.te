@@ -1,6 +1,3 @@
 allow qmuxd diag_device:chr_file rw_file_perms;
-allow qmuxd sysfs:file { read } ;
-allow qmuxd vendor_radio_prop:file { read } ;
-allow qmuxd sysfs:file { open } ;
-allow qmuxd vendor_radio_prop:file { open } ;
-allow qmuxd vendor_radio_prop:file { getattr } ;
+allow qmuxd sysfs:file { read open} ;
+
