@@ -386,9 +386,6 @@ on post-fs-data
     #Create directory for hostapd
     mkdir /data/hostapd 0770 system wifi
 
-    # Create /data/time folder for time-services
-    mkdir /data/time/ 0700 system system
-
     mkdir /data/vendor/audio/ 0770 media audio
     mkdir /data/audio/ 0770 media audio
 
@@ -681,11 +678,6 @@ on charger
 on property:init.svc.surfaceflinger=restarting
     stop vendor.hwcomposer-2-1
     start vendor.hwcomposer-2-1
-
-service vendor.time_daemon /system/vendor/bin/time_daemon
-    class main
-    user root
-    group root
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core

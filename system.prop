@@ -199,10 +199,6 @@ debug.sf.early_gl_app_phase_offset_ns=15000000
 # TCP
 net.tcp.2g_init_rwnd=10
 
-# Time Services
-persist.timed.enable=true
-persist.vendor.delta_time.enable=true
-
 # WiFi
 wifi.direct.interface=p2p0
 wifi.interface=wlan0
