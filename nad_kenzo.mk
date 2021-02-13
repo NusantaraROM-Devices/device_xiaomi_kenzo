@@ -24,6 +24,8 @@ $(call inherit-product, device/xiaomi/kenzo/device.mk)
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 NAD_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_PACKAGES += \
+    Dirac
 
 # Bypass Q path restriction to compile with gcc 2018
 TEMPORARY_DISABLE_PATH_RESTRICTIONS := true
