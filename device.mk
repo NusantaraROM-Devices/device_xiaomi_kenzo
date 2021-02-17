@@ -199,6 +199,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
 
+PRODUCT_PACKAGES += \
+    Snap
+
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
