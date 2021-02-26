@@ -32,3 +32,4 @@ allow init hidl_base_hwservice:hwservice_manager { add } ;
 allow init sysfs_dt2w:file { rw_file_perms setattr };
 allow init proc_touchpanel:file { rw_file_perms setattr };
 allow init proc:file { setattr };
+allow init logcat_exec:file getattr;
