@@ -358,6 +358,10 @@ PRODUCT_PACKAGES += \
     init.spectrum.rc \
     init.spectrum.sh
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
