@@ -61,6 +61,7 @@ char const *heapgrowthlimit;
 char const *heapsize;
 char const *heapminfree;
 char const *heapmaxfree;
+char const *heaptargetutilization;
 
 void check_device()
 {
@@ -88,22 +89,22 @@ void check_device()
 
     // set Go tweaks for LMK for 2/3 GB
     if (sys.totalram < 3072ull * 1024 * 1024) {
-        property_set("ro.lmk.critical_upgrade", "true");
-        property_set("ro.lmk.upgrade_pressure", "40");
-        property_set("ro.lmk.downgrade_pressure", "60");
-        property_set("ro.lmk.kill_heaviest_task", "false");
+        property_override("ro.lmk.critical_upgrade", "true");
+        property_override("ro.lmk.upgrade_pressure", "40");
+        property_override("ro.lmk.downgrade_pressure", "60");
+        property_override("ro.lmk.kill_heaviest_task", "false");
     }
 
     // set rest of Go tweaks for 2 GB
     if (sys.totalram < 2048ull * 1024 * 1024) {
         // set lowram options and enable traced by default
-        property_set("ro.config.low_ram", "true");
-        property_set("persist.traced.enable", "true");
-        property_set("ro.statsd.enable", "true");
+        property_override("ro.config.low_ram", "true");
+        property_override("persist.traced.enable", "true");
+        property_override("ro.statsd.enable", "true");
         // set threshold to filter unused apps
-        property_set("pm.dexopt.downgrade_after_inactive_days", "10");
+        property_override("pm.dexopt.downgrade_after_inactive_days", "10");
         // set the compiler filter for shared apks to quicken
-        property_set("pm.dexopt.shared", "quicken");
+        property_override("pm.dexopt.shared", "quicken");
     }
 }
 
