@@ -125,9 +125,6 @@ service vendor.energy-awareness /system/vendor/bin/energy-awareness
     group system
     oneshot
 
-on property:ro.config.low_ram=true
-    mount none /vendor/etc/permissions/go_handheld_core_hardware.xml /vendor/etc/permissions/handheld_core_hardware.xml bind
-
 # Logcat Services
 service boot_log /system/bin/logcat -b all -D -f /cache/boot_log_full.txt
     class main
