@@ -33,3 +33,5 @@ allow system_app fm_radio_device:chr_file r_file_perms;
 # BatteryHealth
 allow system_app sysfs_battery_supply:dir search;
 allow system_app sysfs_battery_supply:file r_file_perms;
+
+allow system_app sysfs_vibrator:file { write getattr open read };
