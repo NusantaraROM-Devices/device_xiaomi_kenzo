@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "github",
+    "repository": "magicxavi/kernel_xiaomi_msm8956",
+    "target_path": "kernel/xiaomi/msm8956",
+    "branch": "bloss-shinelotus"
+  },
+  {
+    "remote": "github",
+    "repository": "MocaRafee/unified_vendor_xiaomi_kenzo",
+    "target_path": "vendor/xiaomi/kenzo",
+    "branch": "11"
+  },
+  {
+    "remote": "github",
+    "repository": "MocaRafee/android__system_bt",
+    "target_path": "system/bt",
+    "branch": "11"
+  }
+]
