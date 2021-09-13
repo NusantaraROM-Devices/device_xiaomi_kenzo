@@ -13,7 +13,13 @@
   },
   {
     "remote": "github",
-    "repository": "MocaRafee/android__system_bt",
+    "repository": "MocaRafee/frameworks_av",
+    "target_path": "frameworks/av",
+    "branch": "11"
+  },
+  {
+    "remote": "github",
+    "repository": "MocaRafee/system_bt",
     "target_path": "system/bt",
     "branch": "11"
   }

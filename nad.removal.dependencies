@@ -1,5 +1,8 @@
 [
    {
       "repository": "android_system_bt",
+   },
+   {
+      "repository": "android_frameworks_av",
    }
 ]
