@@ -1,8 +1,12 @@
 [
-   {
-      "repository": "android_system_bt",
-   },
-   {
-      "repository": "android_frameworks_av",
-   }
+  {
+    "remote": "nad",
+    "repository": "android_frameworks_av",
+    "target_path": "frameworks/av"
+  },
+  {
+    "remote": "nad",
+    "repository": "android_system_bt",
+    "target_path": "system/bt"
+  }
 ]
