@@ -2,7 +2,7 @@
   {
     "remote": "github",
     "repository": "magicxavi/kernel_xiaomi_msm8956",
-    "target_path": "kernel/xiaomi/msm8956",
+    "target_path": "kernel/xiaomi/kenzo",
     "branch": "bloss-shinelotus"
   },
   {
