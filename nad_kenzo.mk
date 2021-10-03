@@ -26,7 +26,8 @@ NAD_BUILD_TYPE := OFFICIAL
 TARGET_USES_BLUR := true
 USE_AOSP_CLOCK := true
 PRODUCT_PACKAGES += \
-    Dirac
+    Dirac \
+    AdvancedControls
 
 
 # Set those variables here to overwrite the inherited values.

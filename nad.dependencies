@@ -19,6 +19,12 @@
   },
   {
     "remote": "github",
+    "repository": "Mocaness/android_packages_apps_AdvancedControls",
+    "target_path": "packages/apps/AdvancedControls",
+    "branch": "kenzo"
+  },
+  {
+    "remote": "github",
     "repository": "MocaRafee/frameworks_av",
     "target_path": "frameworks/av",
     "branch": "11"
