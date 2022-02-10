@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository": "Irawans-Android-Lab/kernel_xiaomi_msm8956",
+    "target_path": "kernel/xiaomi/kenzo",
+    "branch": "main"
+  },
+  {
+    "remote": "ghpriv",
+    "repository": "NusantaraROM-Devices/vendor_xiaomi_kenzo",
+    "target_path": "vendor/xiaomi/kenzo",
+    "branch": "11"
+  }
+]
