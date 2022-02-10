@@ -10,5 +10,11 @@
     "repository": "NusantaraROM-Devices/vendor_xiaomi_kenzo",
     "target_path": "vendor/xiaomi/kenzo",
     "branch": "11"
+  },
+  {
+    "remote": "github",
+    "repository": "Irawans-Android-Lab/prebuilts_vndk_v27",
+    "target_path": "prebuilts/vndk/v27",
+    "branch": "master"
   }
 ]
